@@ -1,11 +1,21 @@
-struct campo;
-
+typedef struct campo No;
+typedef struct campoVetor Lista;
 void menu();
 
-void inserir();
+No *buscaElem(No *aux, int valor);
+No *buscaElem2(No* aux1, No* aux2);
+void imprimeNo(No* aux);
+int indxHash(int valor);
 
-void checkEx();
+void CriarTab();
 
-void unirTabs();
+void ExibirTab();
 
-void deletar();
+void UnirTabs();
+
+int CheckEx();
+
+void InserirElem();
+
+void ExcluirElem();
+
